@@ -1,0 +1,16 @@
+﻿@{
+    
+
+
+    ViewBag.Title = "Home Page";
+
+    string Location = System.Web.Configuration.WebConfigurationManager.AppSettings["location"];
+
+}
+
+<div class="jumbotron">
+    <h1>Hello from: @Location</h1>
+    <p class="lead">This app reads an app setting to tell you where it's being served from</p>
+    
+</div>
+
