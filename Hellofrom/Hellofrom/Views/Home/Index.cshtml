@@ -1,11 +1,13 @@
 ﻿@{
     ViewBag.Title = "Home Page";
     string Location = System.Web.Configuration.WebConfigurationManager.AppSettings["location"];
+    string Fruit= System.Web.Configuration.WebConfigurationManager.AppSettings["Setting2"];
+    string Animal = System.Web.Configuration.WebConfigurationManager.AppSettings["Setting1"];
 }
 
 <div class="jumbotron">
-    <h1>Saludos</h1>
-    <!--
-    <p class="lead">This app reads an app setting to tell you where it's being served from</p>
-    -->
+    @*<h1>Saludos</h1>*@
+    <h1>Fruit: @Fruit</h1>
+    <h1>Animal: @Animal</h1>
+    
 </div>
